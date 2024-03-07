@@ -6,6 +6,7 @@ import MainSide from "./components/Main/MainSide";
 import CVForm from "./components/CVForm/CVform";
 import Footer from "./components/Footer/Footer";
 import ParticlesJS from "./components/Particles/Particles";
+import Test from "./components/test";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <MainSide />
         <CVForm />
         <Footer />
+        <Test />
       </ChakraProvider>
     </>
   );

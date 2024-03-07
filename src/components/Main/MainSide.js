@@ -1,11 +1,14 @@
 import React from 'react'
 import { Box, IconButton, Text } from '@chakra-ui/react'
 import { ArrowDownIcon } from '@chakra-ui/icons'
+import blobhaikei from '../../assets/circle-scatter-haikei.svg'
 
 const MainSide = () => {
   return (
     <Box
-      bgColor={'#171717'}
+      backgroundImage={blobhaikei}
+      backgroundRepeat={'no-repeat'}
+      backgroundSize={'cover'}
       w="100%"
       h="60vh"
       p={8}

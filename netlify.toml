@@ -1,0 +1,2 @@
+[build]
+  functions = "netlify/functions" # Asegúrate de que esta ruta coincida con la ubicación de tus funciones
