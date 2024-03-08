@@ -82,9 +82,11 @@ const CVForm = () => {
         </Text>
         <VStack spacing={4} align="stretch">
           <FormControl isRequired>
-            <FormLabel>Nombre</FormLabel>
+            <FormLabel color={'white'}>Nombre</FormLabel>
             <Input
               color={"white"}
+              placeholder='Escribi wachin'
+              _placeholder={{ color: 'gray.500' }}
               size={"sm"}
               name="nombre"
               value={formData.nombre}
@@ -94,8 +96,11 @@ const CVForm = () => {
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel>Apellido</FormLabel>
+            <FormLabel color={'white'}>Apellido</FormLabel>
             <Input
+            color={'white'}
+            placeholder='Escribi wachin'
+            _placeholder={{ color: 'gray.500' }}
               size={"sm"}
               name="apellido"
               value={formData.apellido}
@@ -105,9 +110,11 @@ const CVForm = () => {
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel>Email</FormLabel>
+            <FormLabel color={'white'}>Email</FormLabel>
             <Input
               color={"white"}
+              placeholder='Escribi wachin'
+              _placeholder={{ color: 'gray.500' }}
               size={"sm"}
               name="email"
               type="email"
@@ -118,9 +125,11 @@ const CVForm = () => {
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel>Teléfono</FormLabel>
+            <FormLabel color={'white'}>Teléfono</FormLabel>
             <Input
               color={"white"}
+              placeholder='Escribi wachin'
+              _placeholder={{ color: 'gray.500' }}
               size={"sm"}
               name="telefono"
               type="tel"
@@ -142,6 +151,8 @@ const CVForm = () => {
                     <FormLabel>Empresa</FormLabel>
                     <Input
                       size={"sm"}
+                      placeholder='Escribi wachin'
+                      _placeholder={{ color: 'gray.500' }}
                       name="empresa"
                       value={exp.empresa}
                       onChange={(e) => handleExperienceChange(index, e)}
@@ -151,13 +162,15 @@ const CVForm = () => {
                     <FormLabel>Rol</FormLabel>
                     <Input
                       size={"sm"}
+                      placeholder='Escribi wachin'
+                      _placeholder={{ color: 'gray.500' }}
                       name="rol"
                       value={exp.rol}
                       onChange={(e) => handleExperienceChange(index, e)}
                     />
                   </FormControl>
                   <FormControl>
-                    <FormLabel>Descripción</FormLabel>
+                    <FormLabel color={'white'}>Descripción</FormLabel>
                     <Textarea
                       name="descripcion"
                       value={exp.descripcion}
@@ -165,9 +178,11 @@ const CVForm = () => {
                     />
                   </FormControl>
                   <FormControl>
-                    <FormLabel>Período</FormLabel>
+                    <FormLabel color={'white'}>Período</FormLabel>
                     <Input
                       size={"sm"}
+                      placeholder='Escribi wachin'
+                      _placeholder={{ color: 'gray.500' }}
                       name="periodo"
                       value={exp.periodo}
                       onChange={(e) => handleExperienceChange(index, e)}
@@ -175,6 +190,8 @@ const CVForm = () => {
                   </FormControl>
                   <IconButton
                     size={"sm"}
+                    placeholder='Escribi wachin'
+                    _placeholder={{ color: 'gray.500' }}
                     aria-label="Eliminar experiencia"
                     icon={<DeleteIcon />}
                     onClick={() => deleteExperience(index)}
@@ -186,6 +203,7 @@ const CVForm = () => {
         )}
         <Button
           size={"sm"}
+          color={'white'}
           mt={3}
           mr={2}
           leftIcon={<AddIcon />}
