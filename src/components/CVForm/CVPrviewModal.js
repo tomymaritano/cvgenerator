@@ -17,7 +17,7 @@ import { FaEye } from "react-icons/fa";
 const CVPreviewModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const [setSize] = React.useState("md");
+  const [size, setSize] = React.useState("md");
 
   const handleSizeClick = (newSize) => {
     setSize(newSize);
