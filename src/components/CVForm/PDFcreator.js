@@ -20,18 +20,18 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: 'center',
     marginBottom: 10, // Espacio después del título
-    fontFamily: 'Century Gothic', // Fuente más prominente para el título
+    fontFamily: 'Times-Bold', // Fuente más prominente para el título
   },
   subTitle: {
-    fontSize: 12,
+    fontSize: 18,
     marginVertical: 5, // Espaciado vertical para subtítulos
-    fontFamily: 'Century Gothic', // Fuente diferente para subtítulos
+    fontFamily: 'Times-Italic', // Fuente diferente para subtítulos
   },
   text: {
     margin: 10,
     fontSize: 10,
     textAlign: 'justify',
-    fontFamily: 'Century Gothic', // Fuente para el texto regular
+    fontFamily: 'Times-Roman', // Fuente para el texto regular
   },
 });
 

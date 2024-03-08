@@ -10,7 +10,7 @@ const CVPreview = ({ formData }) => {
   return (
 
 
-        <VStack spacing={4} align="stretch">
+        <VStack color={'white'} spacing={4} align="stretch">
           <Heading as="h2" size="lg">Vista Previa del CV</Heading>
           <Text><strong>Nombre:</strong> {formData.nombre} {formData.apellido}</Text>
           <Text><strong>Email:</strong> {formData.email}</Text>

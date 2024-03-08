@@ -74,16 +74,17 @@ const CVForm = () => {
   return (
     <Box p={5} bgColor={"#212121"}>
       <Container>
-        <Heading textAlign={"center"} size={"lg"}>
+        <Heading color={"white"} textAlign={"center"} size={"lg"}>
           Crea tu mentira gratis!
         </Heading>
-        <Text textAlign={"center"} pb={6}>
+        <Text color={"white"} textAlign={"center"} pb={6}>
           No te olvides que yo tambien fui uno! 👻
         </Text>
         <VStack spacing={4} align="stretch">
           <FormControl isRequired>
             <FormLabel>Nombre</FormLabel>
             <Input
+              color={"white"}
               size={"sm"}
               name="nombre"
               value={formData.nombre}
@@ -106,6 +107,7 @@ const CVForm = () => {
           <FormControl isRequired>
             <FormLabel>Email</FormLabel>
             <Input
+              color={"white"}
               size={"sm"}
               name="email"
               type="email"
@@ -118,6 +120,7 @@ const CVForm = () => {
           <FormControl isRequired>
             <FormLabel>Teléfono</FormLabel>
             <Input
+              color={"white"}
               size={"sm"}
               name="telefono"
               type="tel"
@@ -131,7 +134,7 @@ const CVForm = () => {
         </VStack>
 
         {showExperiences && (
-          <VStack pt={3} spacing={4} align="stretch">
+          <VStack color={"white"} pt={3} spacing={4} align="stretch">
             {experiencias.map((exp, index) => (
               <Box key={index} p={4} borderWidth="1px" borderRadius="lg">
                 <VStack spacing={3}>
@@ -202,7 +205,12 @@ const CVForm = () => {
               }
             </PDFDownloadLink>
           </Button>
-          <Button colorScheme="gray" onClick={() => generateDoc(formData)} mt={3} size={"sm"}>
+          <Button
+            colorScheme="gray"
+            onClick={() => generateDoc(formData)}
+            mt={3}
+            size={"sm"}
+          >
             Word
           </Button>
           <CVPreviewModal />
