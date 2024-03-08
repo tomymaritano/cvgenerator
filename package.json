@@ -17,9 +17,12 @@
     "docx": "^8.5.0",
     "file-saver": "^2.0.5",
     "framer-motion": "^11.0.8",
+    "netlify-cli": "^17.18.1",
+    "node": "^21.7.0",
     "openai": "^4.28.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.12.2",
     "web-vitals": "^2.1.4"
