@@ -4,7 +4,6 @@ import {
   VStack,
   Text,
   Heading,
-  Container,
 } from '@chakra-ui/react';
 
 const CVPreview = ({ formData }) => {

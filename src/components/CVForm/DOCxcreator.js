@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Packer, Document, Paragraph, TextRun } from 'docx';
 import { saveAs } from 'file-saver';
 

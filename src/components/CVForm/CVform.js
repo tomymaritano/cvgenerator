@@ -16,7 +16,6 @@ import { AddIcon, DeleteIcon } from "@chakra-ui/icons";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import PDFCreator from "./PDFcreator";
 import generateDoc from "./DOCxcreator";
-import CVPreview from "./CVPreview";
 import CVPreviewModal from "./CVPrviewModal";
 
 const CVForm = () => {
@@ -57,12 +56,12 @@ const CVForm = () => {
     }));
   };
 
-  const handleEmailChange = (e) => {
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      email: e.target.value,
-    }));
-  };
+  // const handleEmailChange = (e) => {
+  //   setFormData((prevFormData) => ({
+  //     ...prevFormData,
+  //     email: e.target.value,
+  //   }));
+  // };
 
   const deleteExperience = (index) => {
     const filteredExperiences = experiencias.filter((_, i) => i !== index);
